@@ -1,0 +1,75 @@
+/* <img src="https://via.placeholder.com/50x50"> */
+
+/* overflow: hidden; */
+/* position: relative; */
+/* box-shadow: inset 0 0 0 1px #8c8c8c; */
+/* margin-bottom: auto; */
+/* padding: 1em; */
+/* display: block; */
+/* width: calc(100%); */
+/* height: calc(100%); */
+/* flex: 1 auto; */
+/* align-content: space-around; */
+
+/border-width: 0 5px 5px 0;/
+/border-color: black;/
+/margin-top: -1px;/
+/margin-left: -1px;/
+/border: 1px solid #8c8c8c;/
+
+
+.main-flex-sheet {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.flex-sheet {
+  display: flex;
+
+  max-width: 800px;
+  width: 100%;
+
+  max-height: calc(100% - 4em);
+  height: calc(100%);
+
+  align-items: center;
+  
+  /* justify-content: center; */
+  justify-content: space-between;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* overflow: hidden; */
+
+}
+
+.flex-sheet>div {
+  background-color: white;
+  flex: 1 1 50%;
+  /* flex: 0 50%; */
+   /* flex: 1 0 auto; */
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-sheet>div:hover {
+  background-color: orange;
+}
+
+
+/* max-width == até no maximo */
+/* @media screen and (max-width: 600px) {
+  .flex-sheet {
+    flex-direction: column;
+  }
+} */
